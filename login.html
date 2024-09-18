@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <script src="./scripts/login.js" ></script>
 </head>
 <body>
     <h1>Login as existing user</h1>
-    <div>
-        <a href="./index.html">Home</a>
-        <a href="./register.html">Register</a>
-    </div>
+    <form id="login">
+        <input type="email" placeholder="Enter your email" required name="email">
+        <input type="password" placeholder="Enter your password" required name="password">
+        <button type="submit">Submit</button>
+    </form>
+        <div>
+            <a href="./index.html">Home</a>
+            <a href="./register.html">Register</a>
+        </div>
+        <h1 id="success"></h1>
 </body>
 </html>
